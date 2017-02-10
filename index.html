@@ -46,8 +46,8 @@
         </a>
     </section>
 
-    <div id="question" class="page">
-      <h2 class="question">Do you create software?</h2>
+    <div id="main" class="page">
+      <h2 id="question" class="question">Do you create software?</h2>
 
       <div class="buttons">
         <a class="btn yes-hover" href="#yes"
@@ -74,14 +74,7 @@
     </a>
   </footer>
 
-  <script>
-    document.location.hash = '';
-
-    setTimeout(function () {
-      var className = document.getElementById('footer').className;
-      document.getElementById('footer').className = className.replace('kinda-show', '');
-    }, 3000);
-  </script>
+  <script type="text/javascript" src="app.js"></script>
   <script async defer src="https://buttons.github.io/buttons.js"></script>
   <script>
     window.twttr = (function (d, s, id) {
