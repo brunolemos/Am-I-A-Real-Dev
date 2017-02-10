@@ -1,7 +1,7 @@
-@-webkit-keyframes kinda-show { 100% { opacity: 0.2; } }
-@-moz-keyframes kinda-show { 100% { opacity: 0.2; } }
-@-o-keyframes kinda-show { 100% { opacity: 0.2; } }
-@keyframes kinda-show { 100% { opacity: 0.2; } }
+@-webkit-keyframes show { 100% { opacity: 1; } }
+@-moz-keyframes show { 100% { opacity: 1; } }
+@-o-keyframes show { 100% { opacity: 1; } }
+@keyframes show { 100% { opacity: 1; } }
 
 * {
   box-sizing: border-box;
@@ -127,23 +127,13 @@ footer {
   min-height: 40px;
   padding: 20px;
   font-size: 12px;
-  opacity: 0.2;
-}
-
-footer:hover {
-  opacity: 1;
 }
 
 footer > * {
-  margin: 0 2px;
+  margin: 0 5px;
 }
 
-.kinda-show {
+.show-animation {
   opacity: 0;
-  animation: kinda-show 2s 1s forwards;
-}
-
-.kinda-show:hover {
-  opacity: 1 !important;
-  animation: none !important;
+  animation: show 4s 1s forwards;
 }

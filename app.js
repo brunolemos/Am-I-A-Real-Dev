@@ -1,9 +1,9 @@
 setTimeout(
   function() {
     var className = document.getElementById('footer').className;
-    document.getElementById('footer').className = className.replace('kinda-show', '');
+    document.getElementById('footer').className = className.replace('show-animation', '');
   },
-  3000
+  5000
 );
 
 function tryEncodeURI(uri) {
