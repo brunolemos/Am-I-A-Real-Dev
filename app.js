@@ -6,6 +6,16 @@ setTimeout(
   3000
 );
 
+function tryEncodeURI(uri) {
+  if (!uri) return '';
+
+  try {
+    return encodeURI(uri);
+  } catch (e) {
+    return uri;
+  }
+}
+
 function tryDecodeURI(uri) {
   if (!uri) return '';
 
@@ -26,3 +36,7 @@ if (hasCustomQuestion) {
     document.getElementById('question').innerText = tryDecodeURI(q);
   }
 }
+
+var twitterShareLink = "https://twitter.com/intent/tweet?text=&hashtags=&url="+tryEncodeURI(window.location.href)+"#";
+document.getElementById('twitter-share-link-1').href = twitterShareLink;
+document.getElementById('twitter-share-link-2').href = twitterShareLink;
