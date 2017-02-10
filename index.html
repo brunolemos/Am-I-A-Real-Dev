@@ -27,6 +27,7 @@
       <h2 class="answer">&nbsp;<span class="no">NO</span>,</h2>
       <h3 class="answer">You are not a Real Dev.</h1>
         <a class="btn check-again" href="#">check again</a>
+        <a class="btn share twitter-hover" href="https://twitter.com/intent/tweet?text=&hashtags=&url=http://AmIARealDev.com/" target="_blank">share on twitter</a>
     </section>
 
     <div id="question" class="page">
@@ -51,6 +52,8 @@
   </footer>
 
   <script>
+    document.location.hash = '';
+
     setTimeout(function () {
       var className = document.getElementById('footer').className;
       document.getElementById('footer').className = className.replace('kinda-show', '');

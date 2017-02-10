@@ -52,6 +52,11 @@ a:hover {
   border-color: #F44336;
 }
 
+.twitter, .twitter-hover:hover {
+  color: #1da1f2 !important;
+  border-color: #1da1f2 !important;
+}
+
 .btn {
   margin: 0 5px;
   padding: 5px 20px;
@@ -102,6 +107,7 @@ a:hover {
 
 .check-again {
   margin-top: 40px;
+  margin-bottom: 10px;
 }
 
 footer {
