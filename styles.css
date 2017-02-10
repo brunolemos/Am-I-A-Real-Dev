@@ -1,0 +1,134 @@
+@-webkit-keyframes kinda-show { 100% { opacity: 0.2; } }
+@-moz-keyframes kinda-show { 100% { opacity: 0.2; } }
+@-o-keyframes kinda-show { 100% { opacity: 0.2; } }
+@keyframes kinda-show { 100% { opacity: 0.2; } }
+
+* {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 900;
+}
+
+html, body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100%;
+}
+
+body {
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+  color: #222;
+  text-align: center;
+  padding: 20px;
+}
+
+h1.title {
+  display: none;
+}
+
+a, a:link, a:active, a:focus {
+  color: #222;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.yes, .yes-hover:hover {
+  color: #4CAF50;
+  border-color: #4CAF50;
+}
+
+.no, .no-hover:hover {
+  color: #F44336;
+  border-color: #F44336;
+}
+
+.btn {
+  margin: 0 5px;
+  padding: 5px 20px;
+  border: 1px solid #333;
+  border-radius: 10px;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.pages {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pages > .page:target ~ .page:last-child,
+.pages > .page {
+  display: none;
+}
+
+.pages > :last-child,
+.pages > .page:target {
+  display: flex;
+  flex-direction: column;
+}
+
+.pages .page h2.question {
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.pages .page h2.answer {
+  line-height: 200px;
+  font-size: 240px;
+  margin-bottom: 20px;
+}
+
+.pages .page h3.answer {
+  margin-top: 10px;
+  font-size: 24px;
+  text-transform: uppercase;
+}
+
+.check-again {
+  margin-top: 40px;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 40px;
+  padding: 20px;
+  font-size: 12px;
+  opacity: 0.2;
+}
+
+footer:hover {
+  opacity: 1;
+}
+
+footer > * {
+  margin: 0 2px;
+}
+
+.kinda-show {
+  opacity: 0;
+  animation: kinda-show 2s 1s forwards;
+}
+
+.kinda-show:hover {
+  opacity: 1 !important;
+  animation: none !important;
+}

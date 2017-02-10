@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+
+<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# video: http://ogp.me/ns/video#">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Am I a Real Dev?</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Roboto:900" rel="stylesheet">
+  <link rel="stylesheet" href="reset.css" />
+  <link rel="stylesheet" href="styles.css" />
+
+  <style type="text/css" id="style"></style>
+</head>
+
+<body>
+  <h1 class="title">Am I a Real Dev?</h1>
+
+  <div class="pages">
+    <section id="yes" class="page">
+      <h2 class="answer">&nbsp;<span class="yes">YES</span>,</h2>
+      <h3 class="answer">You are a Real Dev.</h1>
+        <a class="btn check-again" href="#">check again</a>
+    </section>
+
+    <section id="no" class="page">
+      <h2 class="answer">&nbsp;<span class="no">NO</span>,</h2>
+      <h3 class="answer">You are not a Real Dev.</h1>
+        <a class="btn check-again" href="#">check again</a>
+    </section>
+
+    <div id="question" class="page">
+      <h2 class="question">Do you create software?</h2>
+
+      <div class="buttons">
+        <a class="btn yes-hover" href="#yes">Yes</a>
+        <a class="btn no-hover" href="#no">No</a>
+      </div>
+    </div>
+  </div>
+
+  <footer id="footer" class="kinda-show">
+    <a class="github-button" href="https://github.com/brunolemos/Am-I-a-Real-Dev" data-icon="octicon-star" data-count-href="/brunolemos/Am-I-a-Real-Dev/stargazers"
+      data-count-api="/repos/brunolemos/Am-I-a-Real-Dev#stargazers_count" data-count-aria-label="# stargazers on GitHub" aria-label="Star brunolemos/Am-I-a-Real-Dev on GitHub">
+      Star on GitHub
+      </a>
+
+      <a class="twitter-follow-button" href="https://twitter.com/brunolemos" target="_blank" data-show-count="false">
+      @brunolemos
+    </a>
+  </footer>
+
+  <script>
+    setTimeout(function () {
+      var className = document.getElementById('footer').className;
+      document.getElementById('footer').className = className.replace('kinda-show', '');
+    }, 3000);
+  </script>
+  <script async defer src="https://buttons.github.io/buttons.js"></script>
+  <script>
+    window.twttr = (function (d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0],
+        t = window.twttr || {};
+      if (d.getElementById(id)) return t;
+      js = d.createElement(s);
+      js.id = id;
+      js.src = "https://platform.twitter.com/widgets.js";
+      fjs.parentNode.insertBefore(js, fjs);
+
+      t._e = [];
+      t.ready = function (f) {
+        t._e.push(f);
+      };
+
+      return t;
+    } (document, "script", "twitter-wjs"));
+  </script>
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date(); a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-91765240-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+</body>
+
+</html>
