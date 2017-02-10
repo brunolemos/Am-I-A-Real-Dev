@@ -4,6 +4,7 @@
 @keyframes kinda-show { 100% { opacity: 0.2; } }
 
 * {
+  box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
   font-weight: 900;
 }
@@ -97,6 +98,14 @@ a:hover {
   line-height: 200px;
   font-size: 240px;
   margin-bottom: 20px;
+}
+
+@media(max-width: 600px) {
+  .pages .page h2.answer {
+    line-height: 200px;
+    font-size: 160px;
+    margin-bottom: 20px;
+  }
 }
 
 .pages .page h3.answer {
