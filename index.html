@@ -20,33 +20,55 @@
     <section id="yes" class="page">
       <h2 class="answer">&nbsp;<span class="yes">YES</span>,</h2>
       <h3 class="answer">You are a Real Dev 🎉 🎉</h1>
-        <a class="btn check-again" href="#">check again</a>
+        <a class="btn check-again" href="#"
+          onclick="ga('send', 'event', 'user', 'click', 'check-again', 1)">
+          check again
+        </a>
+        <a class="btn share twitter-hover"
+          href="https://twitter.com/intent/tweet?text=&hashtags=&url=http://AmIARealDev.com/"
+          target="_blank" onclick="ga('send', 'event', 'user', 'share', 'twitter', 1)">
+          share on twitter
+        </a>
     </section>
 
     <section id="no" class="page">
       <h2 class="answer">&nbsp;<span class="no">NO</span>,</h2>
       <h3 class="answer">You are not a Real Dev 😐</h1>
-        <a class="btn check-again" href="#">check again</a>
-        <a class="btn share twitter-hover" href="https://twitter.com/intent/tweet?text=&hashtags=&url=http://AmIARealDev.com/" target="_blank">share on twitter</a>
+        <a class="btn check-again" href="#"
+          onclick="ga('send', 'event', 'user', 'click', 'check-again', 2)">
+          check again
+        </a>
+        <a class="btn share twitter-hover"
+          href="https://twitter.com/intent/tweet?text=&hashtags=&url=http://AmIARealDev.com/"
+          target="_blank" onclick="ga('send', 'event', 'user', 'share', 'twitter', 2)">
+          share on twitter
+        </a>
     </section>
 
     <div id="question" class="page">
       <h2 class="question">Do you create software?</h2>
 
       <div class="buttons">
-        <a class="btn yes-hover" href="#yes">Yes</a>
-        <a class="btn no-hover" href="#no">No</a>
+        <a class="btn yes-hover" href="#yes"
+          onclick="ga('send', 'event', 'user', 'answer', 'yes')">Yes</a>
+
+        <a class="btn no-hover" href="#no"
+          onclick="ga('send', 'event', 'user', 'answer', 'no')">No</a>
       </div>
     </div>
   </div>
 
   <footer id="footer" class="kinda-show">
     <a class="github-button" href="https://github.com/brunolemos/Am-I-a-Real-Dev" data-icon="octicon-star" data-count-href="/brunolemos/Am-I-a-Real-Dev/stargazers"
-      data-count-api="/repos/brunolemos/Am-I-a-Real-Dev#stargazers_count" data-count-aria-label="# stargazers on GitHub" aria-label="Star brunolemos/Am-I-a-Real-Dev on GitHub">
+      data-count-api="/repos/brunolemos/Am-I-a-Real-Dev#stargazers_count"
+      data-count-aria-label="# stargazers on GitHub"
+      aria-label="Star brunolemos/Am-I-a-Real-Dev on GitHub"
+       onclick="ga('send', 'event', 'user', 'open', 'github')">
       Star on GitHub
       </a>
 
-      <a class="twitter-follow-button" href="https://twitter.com/brunolemos" target="_blank" data-show-count="false">
+      <a class="twitter-follow-button" href="https://twitter.com/brunolemos" target="_blank"
+        data-show-count="false" onclick="ga('send', 'user', 'open', 'twitter', 'twitter.com/brunolemos')">
       @brunolemos
     </a>
   </footer>
